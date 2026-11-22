@@ -74,10 +74,7 @@ class TestSolveQuadratic(unittest.TestCase):
 
 
 class TestQuadraticFormula(unittest.TestCase):
-    @unittest.expectedFailure
     def test_known_roots(self):
-        # ``4(num_a * num_c)`` is parsed as a call on the int 4,
-        # raising TypeError instead of computing the discriminant.
         roots = quadratic(1, -3, 2)
         self.assertEqual(set(roots), {1.0, 2.0})
 

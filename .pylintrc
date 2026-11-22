@@ -1,0 +1,7 @@
+[MAIN]
+# src modules import each other as top-level modules (e.g. `from find_primes import ...`)
+init-hook='import sys; sys.path.insert(0, "src")'
+# Style (C) and refactor (R) messages are advisory only; real errors (E) fail the build.
+disable=C,R
+fail-on=E
+fail-under=8
