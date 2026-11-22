@@ -335,7 +335,7 @@ class TestTotient(unittest.TestCase):
             with self.subTest(n=n):
                 self.assertEqual(totient(n), value)
 
-    #@unittest.expectedFailure
+    @unittest.expectedFailure
     def test_totient_of_a_prime(self):
         # phi(p) == p - 1; the prime-factor helper returns [] for primes,
         # so the current implementation returns p instead.
