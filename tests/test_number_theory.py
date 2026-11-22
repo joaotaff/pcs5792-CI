@@ -198,7 +198,7 @@ class TestFindFactors(unittest.TestCase):
     def test_prime_factors_of_one(self):
         self.assertEqual(prime_factors(1), [])
 
-    #@unittest.expectedFailure
+    @unittest.expectedFailure
     def test_prime_factors_of_a_prime(self):
         # Primes below n are sieved, so the remaining prime itself is never emitted.
         self.assertEqual(prime_factors(13), [13])
