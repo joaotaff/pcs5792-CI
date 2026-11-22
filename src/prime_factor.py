@@ -12,12 +12,12 @@ def prime_factors(num):
                 5 is prime.
                 returns [2, 2, 2, 3, 5]
     """
-    primes = find_primes_sieve(num)  # Finds all primes that might be a factor
+    primes = find_primes_sieve(num + 1)  # Finds all primes that might be a factor
     factors = []
 
     for prime in primes:
 
-        if prime >= num + 1:    # If prime is bigger than the number, it is no longer divisible
+        if prime > num:    # If prime is bigger than the number, it is no longer divisible
             break               # So for long lists, quitting earlier is faster
 
         while num % prime == 0:
