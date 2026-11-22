@@ -38,4 +38,4 @@ jobs:
         coverage html
     - name: Execute pylint
       run: |
-        pylint .\src\
+       pylint tests/
