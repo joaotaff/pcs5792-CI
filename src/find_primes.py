@@ -63,6 +63,9 @@ def prime_check(num):
     Checks if a single number is prime.
     A simple function, not a speedy solution.
     """
+    if num == 0:
+        return False
+
     if num == 1:
         return False
 
